@@ -1,0 +1,57 @@
+<%- include('layouts.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro App - Dashboard</title>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="navbar-brand" href="/">
+        <img src="/public/logo.png" alt="Pomodoro App Logo">
+        <span>Pomodoro App</span>
+      </a>
+      <div class="navbar-items">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/settings">Settings</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="dashboard-title">Welcome to your Pomodoro Dashboard!</h1>
+    <div class="dashboard-grid">
+      <div class="dashboard-item">
+        <h2 class="dashboard-item-title">Current Pomodoro</h2>
+        <p class="dashboard-item-description">You are currently in a Pomodoro session. Stay focused and complete your tasks!</p>
+        <div class="dashboard-item-time">
+          <span class="dashboard-item-time-value" id="pomodoro-timer">25:00</span>
+          <span class="dashboard-item-time-label">Remaining</span>
+        </div>
+      </div>
+      <div class="dashboard-item">
+        <h2 class="dashboard-item-title">Today's Progress</h2>
+        <p class="dashboard-item-description">You have completed X Pomodoros today. Keep up the good work!</p>
+        <div class="dashboard-item-progress">
+          <div class="dashboard-item-progress-bar" style="width: 70%;"></div>
+          <span class="dashboard-item-progress-label">70%</span>
+        </div>
+      </div>
+      <div class="dashboard-item">
+        <h2 class="dashboard-item-title">Recent Tasks</h2>
+        <ul class="dashboard-item-task-list">
+          <li class="dashboard-item-task"><a href="#">Task 1</a></li>
+          <li class="dashboard-item-task"><a href="#">Task 2</a></li>
+          <li class="dashboard-item-task"><a href="#">Task 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 Pomodoro App. All rights reserved.</p>
+  </footer>
+  <script src="/public/dashboard.js"></script>
+</body>
+</html>

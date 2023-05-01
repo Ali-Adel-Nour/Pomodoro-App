@@ -1,0 +1,24 @@
+<%- include('layouts.ejs') %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="/css/timer.css">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+    </header>
+    <div class="timer-container">
+        <div class="timer-time">
+            <span class="minutes">25</span>:<span class="seconds">00</span>
+        </div>
+        <div class="timer-buttons">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="/js/timer.js"></script>
+</body>
+</html>
